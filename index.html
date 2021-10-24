@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+ <html lang="es-MX">
+  <head>
+     <meta charset="UTF-8">
+     <title>SURTIBOTANA</title>
+     <style type="text/css">
+
+    *{
+      padding: 0px;
+      margin: 0px;
+     }
+
+     header{
+       width: auto;
+       height: 120px;
+       background-color: #BC8F8F;
+       font-family: fantasy;
+     }
+
+     ul,ol{
+       list-style: none;
+     }
+
+     .nave > li{
+       float: left;
+     }
+
+     .nave li a{
+       background-color: #BC8F8F;
+       color: #000;
+       text-decoration: none;
+       padding: 15px 15px;
+       display: block;
+     }
+
+     .nave li a:hover{
+       background-color: #D8BFD8;
+     }
+
+     .nave li ul{
+       display: none;
+       position: absolute;
+       min-width: 140px;
+     }
+     .nave li:hover > ul{
+       display: block;
+     }
+
+
+     </style>
+
+  </head>
+  <body>
+    <header>
+      <ul class="nave">
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Añadir</a>
+          <ul>
+            <li><a href="cambioingresaCliente.jsp">Cliente</a></li>
+            <li><a href="cambiadatoInsertProducto.jsp">Producto</a></li>
+          </ul>
+        </li>
+
+        <li><a href="">Actualizar</a>
+          <ul>
+            <li><a href="clienteActualiza.jsp">Cliente</a></li>
+            <li><a href="productoActualiza.jsp">Producto</a></li>
+          </ul>
+        </li>
+
+        <li><a href="">Consultar</a>
+            <ul>
+              <li><a href="accesobdSurtibotana.jsp">Cliente</a></li>
+              <li><a href="accesobdProductos.jsp">Producto</a></li>
+            </ul>
+        </li>
+
+        <li><a href="">Eliminar</a>
+          <ul>
+            <li><a href="clienteElimina.jsp">Cliente</a></li>
+            <li><a href="productoElimina.jsp">Producto</a></li>
+          </ul>
+        </li>
+
+        <li><a href="login.jsp">Cerrar Sesion</a></li>
+
+      </ul>
+      <br><br>
+    </header>
+
+    </body>
+ </html>
